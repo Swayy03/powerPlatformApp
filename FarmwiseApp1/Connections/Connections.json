@@ -19,6 +19,9 @@
           },
           "User": {
             "tableName": "b793b240-1545-4531-8b22-e39f50822955"
+          },
+          "UserType": {
+            "tableName": "c16276ef-0911-4b2d-98fb-4c95086bdb2a"
           }
         }
       }
@@ -26,7 +29,8 @@
     "dataSources": [
       "Farmers",
       "Authenticate",
-      "User"
+      "User",
+      "UserType"
     ],
     "dependencies": {},
     "dependents": [],

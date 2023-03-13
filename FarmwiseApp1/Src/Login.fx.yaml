@@ -128,3 +128,21 @@ Login As screen:
         Y: =663
         ZIndex: =10
 
+    Button4 As button:
+        DisabledBorderColor: =RGBA(54, 176, 75, 1)
+        DisabledColor: =RGBA(255, 255, 0, 1)
+        DisabledFill: =RGBA(0, 255, 0, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =58
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 0, 1)
+        HoverFill: =ColorFade(RGBA(0, 255, 0, 1), -20%)
+        OnSelect: =Navigate(Register)
+        PressedColor: =RGBA(0, 0, 0, 0)
+        Size: =24
+        Text: ="No account?Sign Up"
+        Width: =366
+        X: =230
+        Y: =751
+        ZIndex: =11
+
