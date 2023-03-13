@@ -37,7 +37,7 @@ Register As screen:
         Color: =RGBA(141, 198, 63, 1)
         Default: ="Farmer"
         Height: =70
-        Items: =User
+        Items: =Authenticate
         Size: =21
         Width: =575
         X: =40
