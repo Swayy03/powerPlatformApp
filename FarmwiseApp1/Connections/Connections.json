@@ -1,0 +1,27 @@
+{
+  "c1166111-c1d1-40ed-bccc-825b94c9420a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://3tlkd0.sharepoint.com/sites/FARMWISEMAIN": {
+        "dataSources": {
+          "Farmers": {
+            "tableName": "ccfc0323-4d5f-4c95-96a2-bef974e81488"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Farmers"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c1166111-c1d1-40ed-bccc-825b94c9420a"
+  }
+}
