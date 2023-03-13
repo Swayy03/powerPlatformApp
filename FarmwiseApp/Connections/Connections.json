@@ -1,0 +1,80 @@
+{
+  "51871b46-3a05-4be1-a55c-8e976314a9d8": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1618/1.0.1618.3179/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "cce7761f-1cd0-4e41-aca9-d898cefcff18": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "cce7761f-1cd0-4e41-aca9-d898cefcff18"
+        }
+      }
+    },
+    "datasets": {
+      "b!0O9kzDYJ7E-N5qm4IH1tyuGqz5DDpRpEldl3d3uRhzaE4thQ8s-eSaDqZ8TVwZQt.01RHZ3QTMNK44E6IVNFFDIQ3RYD4BU2WAU": {
+        "dataSources": {
+          "Table1": {
+            "tableName": "Table1"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Table1"
+    ],
+    "dependencies": {
+      "fileSource": "cce7761f-1cd0-4e41-aca9-d898cefcff18"
+    },
+    "dependents": [],
+    "id": "51871b46-3a05-4be1-a55c-8e976314a9d8"
+  },
+  "6666537a-4e46-4da7-bca8-876fd0e173fb": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1618/1.0.1618.3179/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6666537a-4e46-4da7-bca8-876fd0e173fb"
+  },
+  "cce7761f-1cd0-4e41-aca9-d898cefcff18": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "51871b46-3a05-4be1-a55c-8e976314a9d8"
+    ],
+    "id": "cce7761f-1cd0-4e41-aca9-d898cefcff18"
+  }
+}
