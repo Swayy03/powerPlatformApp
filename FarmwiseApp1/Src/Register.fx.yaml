@@ -39,7 +39,7 @@ Register As screen:
         Height: =70
         HoverFill: =RGBA(54, 176, 75, 1)
         Items: =UserType
-        OnChange: =Switch(Dropdown1.Selected.UserType,"Organization",Navigate(BrowseScreen1))
+        OnChange: =Switch(Dropdown1.Selected.UserType,"Organization",NewForm(Form2);Navigate(SignUpOrg, ScreenTransition.None))
         Size: =21
         Width: =575
         X: =40

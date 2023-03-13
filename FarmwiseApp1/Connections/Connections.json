@@ -1,4 +1,29 @@
 {
+  "2fb26bb1-d3de-4770-98f7-4abb8242eba5": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://3tlkd0.sharepoint.com/sites/FARMWISEMAIN": {
+        "dataSources": {
+          "Organizations": {
+            "tableName": "ab0d21c8-1200-4578-9130-c1338c033453"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Organizations"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2fb26bb1-d3de-4770-98f7-4abb8242eba5"
+  },
   "c1166111-c1d1-40ed-bccc-825b94c9420a": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -14,7 +39,13 @@
           "Authenticate": {
             "tableName": "f08ea615-19c0-4d89-ae70-fbce11ebf805"
           },
+          "Authenticate_1": {
+            "tableName": "f08ea615-19c0-4d89-ae70-fbce11ebf805"
+          },
           "Farmers": {
+            "tableName": "ccfc0323-4d5f-4c95-96a2-bef974e81488"
+          },
+          "Farmers_1": {
             "tableName": "ccfc0323-4d5f-4c95-96a2-bef974e81488"
           },
           "User": {
@@ -30,10 +61,37 @@
       "Farmers",
       "Authenticate",
       "User",
-      "UserType"
+      "UserType",
+      "Farmers_1",
+      "Authenticate_1"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "c1166111-c1d1-40ed-bccc-825b94c9420a"
+  },
+  "f53f371e-6238-45ed-bc6c-be4e1b36e445": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://3tlkd0.sharepoint.com/sites/FARMWISEMAIN": {
+        "dataSources": {
+          "Authenticate_2": {
+            "tableName": "f08ea615-19c0-4d89-ae70-fbce11ebf805"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Authenticate_2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f53f371e-6238-45ed-bc6c-be4e1b36e445"
   }
 }
