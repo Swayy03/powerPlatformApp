@@ -24,11 +24,12 @@ Login As screen:
         Y: =330
         ZIndex: =2
 
-    TextInput1 As text:
+    loginEmail As text:
         Align: =Align.Center
-        Default: ="Email Address"
+        Default: =""
         Font: =Font.Georgia
         Height: =96
+        HintText: ="Email Address"
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -40,10 +41,12 @@ Login As screen:
         Y: =517
         ZIndex: =3
 
-    TextInput1_1 As text:
+    input3 As text:
         Align: =Align.Center
-        Default: ="Text input"
+        Default: =""
         Height: =88
+        HintText: ="Password"
+        Mode: =If(Button3.Pressed,TextMode.SingleLine,TextMode.Password)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -51,7 +54,7 @@ Login As screen:
         Size: =21
         TabIndex: =1
         Width: =560
-        X: =34
+        X: =29
         Y: =663
         ZIndex: =4
 
@@ -66,6 +69,7 @@ Login As screen:
     Icon2 As icon.Key:
         Height: =43
         Icon: =Icon.Key
+        OnSelect: =input3.Visible
         Width: =44
         X: =70
         Y: =685
@@ -74,8 +78,11 @@ Login As screen:
     Button1 As button:
         Fill: =RGBA(141, 198, 63, 1)
         Height: =76
+        HoverBorderColor: =ColorFade(Self.BorderColor,
         HoverColor: =RGBA(141, 198, 63, 1)
         HoverFill: =ColorFade(RGBA(0,255,10,10), -20%)
+        OnSelect: |-
+            =If(!IsBlank( LookUp(Authenticate,Email=loginEmail.Text And Password=input3.Text).Title),Navigate(BrowseScreen1),UpdateContext({ShowForgetMessage:true}))
         RadiusBottomLeft: =31
         RadiusBottomRight: =31
         RadiusTopLeft: =31
@@ -86,4 +93,38 @@ Login As screen:
         X: =140
         Y: =854
         ZIndex: =7
+
+    Label5 As label:
+        Color: =RGBA(141, 198, 63, 1)
+        Height: =70
+        Size: =21
+        Text: ="Forgot password?"
+        Visible: =ShowForgetMessage
+        Width: =560
+        X: =16
+        Y: =751
+        ZIndex: =8
+
+    Label6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =50
+        Text: ="FARMWISE"
+        Width: =560
+        X: =50
+        Y: =94
+        ZIndex: =9
+
+    Button3 As button:
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =88
+        Size: =24
+        Text: =""
+        Width: =88
+        X: =50
+        Y: =663
+        ZIndex: =10
 

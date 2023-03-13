@@ -102,7 +102,6 @@
     "FileID": "7ff83278-7378-4bcf-b651-a2e246514c1f",
     "Id": "7ff83278-7378-4bcf-b651-a2e246514c1f",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "Name": "FarmwiseApp1",
     "OriginatingVersion": "1.329"
   },
@@ -118,6 +117,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Register",
     "Login",
     "BrowseScreen1",
     "DetailScreen1",

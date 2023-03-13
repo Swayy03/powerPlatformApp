@@ -63,8 +63,10 @@
         ZIndex: =5
 
     TextSearchBox1 As text:
+        Clear: =true
         Default: =""
         DelayOutput: =true
+        EnableSpellCheck: =true
         Height: =68
         HintText: ="Search items"
         PaddingLeft: =70

@@ -1,0 +1,82 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr2de_peoples",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr2de_people",
+    "Name": "People",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr2de_name": "Name",
+      "cr2de_people_AsyncOperations": "System Jobs",
+      "cr2de_people_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr2de_people_DuplicateBaseRecord": "Duplicate Records (cr2de_people_DuplicateBaseRecord)",
+      "cr2de_people_DuplicateMatchingRecord": "Duplicate Records (cr2de_people_DuplicateMatchingRecord)",
+      "cr2de_people_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr2de_people_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr2de_people_ProcessSession": "Process Sessions",
+      "cr2de_people_SyncErrors": "Sync Errors",
+      "cr2de_peopleid": "People",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "People",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (People)",
+    "Name": "cr2de_people_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "People"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "People",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (People)",
+    "Name": "cr2de_people_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "People"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "People",
+    "Type": "OptionSetInfo"
+  }
+]

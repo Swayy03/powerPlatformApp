@@ -11,14 +11,22 @@
     "datasets": {
       "https://3tlkd0.sharepoint.com/sites/FARMWISEMAIN": {
         "dataSources": {
+          "Authenticate": {
+            "tableName": "f08ea615-19c0-4d89-ae70-fbce11ebf805"
+          },
           "Farmers": {
             "tableName": "ccfc0323-4d5f-4c95-96a2-bef974e81488"
+          },
+          "User": {
+            "tableName": "b793b240-1545-4531-8b22-e39f50822955"
           }
         }
       }
     },
     "dataSources": [
-      "Farmers"
+      "Farmers",
+      "Authenticate",
+      "User"
     ],
     "dependencies": {},
     "dependents": [],
