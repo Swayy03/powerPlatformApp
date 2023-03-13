@@ -72,6 +72,7 @@ Login As screen:
         ZIndex: =6
 
     Button1 As button:
+        Fill: =RGBA(141, 198, 63, 1)
         Height: =76
         HoverColor: =RGBA(141, 198, 63, 1)
         HoverFill: =ColorFade(RGBA(0,255,10,10), -20%)
@@ -81,7 +82,7 @@ Login As screen:
         RadiusTopRight: =31
         Size: =24
         Text: ="Login"
-        Width: =303
+        Width: =339
         X: =140
         Y: =854
         ZIndex: =7
