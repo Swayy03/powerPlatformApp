@@ -305,3 +305,12 @@ SignUpOrg As screen:
                 Y: =DataCardKey32.Y
                 ZIndex: =4
 
+    Button5 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =360
+        Y: =900
+        ZIndex: =4
+
