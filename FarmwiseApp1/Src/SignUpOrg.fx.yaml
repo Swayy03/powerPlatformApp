@@ -59,6 +59,7 @@ SignUpOrg As screen:
                 SearchItems: =Choices(Authenticate.UserType,DataCardValue29.SearchText)
                 SelectMultiple: =false
                 Size: =21
+                Template: =ListItemTemplate.Double
                 Tooltip: =Parent.DisplayName
                 Width: =580
                 X: =30
