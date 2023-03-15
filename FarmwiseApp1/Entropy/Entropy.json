@@ -11,7 +11,6 @@
     "Button3": 167,
     "Button4": 170,
     "Button5": 159,
-    "confirm_Password": 194,
     "CustomerID_DataCard1": 32,
     "CustomerID_DataCard2": 81,
     "CustomerID_DataCard3": 177,
@@ -175,7 +174,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/15/2023 13:10:53",
+  "HeaderLastSavedDateTimeUTC": "03/15/2023 13:24:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2fb26bb1-d3de-4770-98f7-4abb8242eba5": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/627a531d389841b5bc8d9b7e5aeb4780\"",
@@ -235,7 +234,6 @@
     "Button3": {},
     "Button4": {},
     "Button5": {},
-    "confirm_Password": {},
     "CustomerID_DataCard1": {},
     "CustomerID_DataCard2": {},
     "CustomerID_DataCard3": {},
@@ -408,7 +406,6 @@
     "Button3": 6,
     "Button4": 9,
     "Button5": 163,
-    "confirm_Password": 156,
     "CustomerID_DataCard1": 36,
     "CustomerID_DataCard2": 84,
     "CustomerID_DataCard3": 142,
@@ -592,11 +589,11 @@
       "label": 83,
       "rectangle": 5,
       "screen": 8,
-      "text": 12,
+      "text": 13,
       "typedDataCard": 26
     },
     "DeserializationLoadTime": 2.3341752,
-    "ErrorCount": 5
+    "ErrorCount": 11
   },
   "WasLocalDatabaseReferencesEmpty": false
 }

@@ -53,10 +53,10 @@ SignUpOrg As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =63
                 InputTextPlaceholder: ="Join Us as"
-                Items: =Choices([@Authenticate].UserType)
+                Items: =Filter(Choices([@Authenticate].UserType), Value = DataCardValue6.Selected.Value)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Authenticate.UserType,DataCardValue29.SearchText)
+                SearchItems: =Search(Filter(Choices([@Authenticate].UserType), Value = DataCardValue6.Selected.Value),DataCardValue29.SearchText,"Value")
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Double
@@ -340,26 +340,6 @@ SignUpOrg As screen:
                 X: =16
                 Y: =10
                 ZIndex: =1
-
-            confirm_Password As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HintText: ="Confirm Password"
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =31
-                RadiusBottomRight: =31
-                RadiusTopLeft: =31
-                RadiusTopRight: =31
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =580
-                X: =29
-                Y: =155
-                ZIndex: =2
 
             ErrorMessage20 As label:
                 AutoHeight: =true
