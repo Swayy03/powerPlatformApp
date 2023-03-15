@@ -14,131 +14,26 @@ SignUpOrg As screen:
         ZIndex: =2
 
     Form2 As form:
-        DataSource: =Organizations
+        DataSource: =Authenticate
         Height: =923
         Width: =640
         Y: =213
         ZIndex: =3
 
-        "'Confirm Password' As typedDataCard.blankCard":
+        UserType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =191
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            Label15 As label:
-                Height: =70
-                Size: =21
-                Text: ="Confirm Password"
-                Width: =560
-                X: =14
-                ZIndex: =1
-
-            TextInput10 As text:
-                Default: =""
-                Height: =66
-                HintText: ="Confirm password"
-                RadiusBottomLeft: =31
-                RadiusBottomRight: =31
-                RadiusTopLeft: =31
-                RadiusTopRight: =31
-                Size: =21
-                Width: =566
-                X: =36
-                Y: =70
-                ZIndex: =2
-
-        Title_DataCard4 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Title"
-            Default: =ThisItem.Title
+            DataField: ="UserType"
+            Default: =ThisItem.UserType
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Organizations],DataSourceInfo.DisplayName,"Title")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@Organizations], DataSourceInfo.MaxLength, "Title")
-            Required: =true
-            Update: =DataCardValue28.Text
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-            DataCardKey29 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue28 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =31
-                RadiusBottomRight: =31
-                RadiusTopLeft: =31
-                RadiusTopRight: =31
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey29.Y + DataCardKey29.Height + 5
-                ZIndex: =2
-
-            ErrorMessage22 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue28.Y + DataCardValue28.Height
-                ZIndex: =3
-
-            StarVisible22 As label:
-                Align: =Align.Center
-                Height: =DataCardKey29.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey29.Y
-                ZIndex: =4
-
-        Organization_Name_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Organization_Name"
-            Default: =ThisItem.Organization_Name
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Organizations],DataSourceInfo.DisplayName,"Organization_Name")
+            DisplayName: =DataSourceInfo([@Authenticate],DataSourceInfo.DisplayName,"UserType")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue29.Selected
             Width: =640
             X: =0
-            Y: =1
-            ZIndex: =4
+            Y: =4
+            ZIndex: =1
 
             DataCardKey30 As label:
                 AutoHeight: =true
@@ -156,18 +51,18 @@ SignUpOrg As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
-                InputTextPlaceholder: ="Select Organization"
-                Items: =Choices([@Organizations].Organization_Name)
+                Height: =63
+                InputTextPlaceholder: ="Join Us as"
+                Items: =Choices([@Authenticate].UserType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Organizations.Organization_Name,DataCardValue29.SearchText)
+                SearchItems: =Choices(Authenticate.UserType,DataCardValue29.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =580
                 X: =30
-                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                Y: =24
                 ZIndex: =2
 
             ErrorMessage23 As label:
@@ -197,23 +92,23 @@ SignUpOrg As screen:
                 Y: =DataCardKey30.Y
                 ZIndex: =4
 
-        Org_Password_DataCard1 As typedDataCard.textualEditCard:
+        Title_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Org_Password"
-            Default: =ThisItem.Org_Password
+            DataField: ="Title"
+            Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Organizations],DataSourceInfo.DisplayName,"Org_Password")
+            DisplayName: =DataSourceInfo([@Authenticate],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Organizations], DataSourceInfo.MaxLength, "Org_Password")
-            Required: =false
-            Update: =DataCardValue30.Text
+            MaxLength: =DataSourceInfo([@Authenticate], DataSourceInfo.MaxLength, "Title")
+            Required: =true
+            Update: =DataCardValue22.Text
             Width: =640
             X: =0
-            Y: =2
+            Y: =0
             ZIndex: =4
 
-            DataCardKey31 As label:
+            DataCardKey23 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -224,12 +119,13 @@ SignUpOrg As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue30 As text:
+            DataCardValue22 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HintText: ="Enter name/organization name"
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =31
@@ -240,10 +136,10 @@ SignUpOrg As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
                 ZIndex: =2
 
-            ErrorMessage24 As label:
+            ErrorMessage16 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -256,24 +152,259 @@ SignUpOrg As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue30.Y + DataCardValue30.Height
+                Y: =DataCardValue22.Y + DataCardValue22.Height
                 ZIndex: =3
 
-            StarVisible24 As label:
+            StarVisible16 As label:
                 Align: =Align.Center
-                Height: =DataCardKey31.Height
+                Height: =DataCardKey23.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey31.Y
+                Y: =DataCardKey23.Y
                 ZIndex: =4
+
+        CustomerID_DataCard3 As typedDataCard.numberEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="CustomerID"
+            Default: =ThisItem.CustomerID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Authenticate],DataSourceInfo.DisplayName,"CustomerID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue23.Text)
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =4
+
+            DataCardKey24 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue23 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                HintText: ="Enter ID_NO/OrganizationID"
+                PaddingLeft: =5
+                RadiusBottomLeft: =31
+                RadiusBottomRight: =31
+                RadiusTopLeft: =31
+                RadiusTopRight: =31
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =33
+                ZIndex: =2
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue23.Y + DataCardValue23.Height
+                ZIndex: =3
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Height: =DataCardKey24.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey24.Y
+                ZIndex: =4
+
+        Email_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Email"
+            Default: =ThisItem.Email
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Authenticate],DataSourceInfo.DisplayName,"Email")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Authenticate], DataSourceInfo.MaxLength, "Email")
+            Required: =false
+            Update: =DataCardValue25.Text
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =4
+
+            DataCardKey26 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue25 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                HintText: ="Enter  E-mail"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =31
+                RadiusBottomRight: =31
+                RadiusTopLeft: =31
+                RadiusTopRight: =31
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =36
+                ZIndex: =2
+
+            ErrorMessage19 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue25.Y + DataCardValue25.Height
+                ZIndex: =3
+
+            StarVisible19 As label:
+                Align: =Align.Center
+                Height: =DataCardKey26.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey26.Y
+                ZIndex: =4
+
+        Password_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Password"
+            Default: |
+                =ThisItem.Password
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Authenticate],DataSourceInfo.DisplayName,"Password")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Authenticate], DataSourceInfo.MaxLength, "Password")
+            Required: =false
+            Update: =confirm_Password.Text
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =4
+
+            DataCardKey27 As label:
+                Height: =228
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =593
+                Wrap: =false
+                X: =16
+                Y: =10
+                ZIndex: =1
+
+            confirm_Password As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                HintText: ="Confirm Password"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =31
+                RadiusBottomRight: =31
+                RadiusTopLeft: =31
+                RadiusTopRight: =31
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =580
+                X: =29
+                Y: =155
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =confirm_Password.Y + confirm_Password.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: =DataCardKey27.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey27.Y
+                ZIndex: =4
+
+            TextInput1 As text:
+                Default: =""
+                Height: =70
+                HintText: ="Enter password"
+                RadiusBottomLeft: =31
+                RadiusBottomRight: =31
+                RadiusTopLeft: =31
+                RadiusTopRight: =31
+                Size: =21
+                Width: =580
+                X: =29
+                Y: =36
+                ZIndex: =5
 
     Button5 As button:
         Fill: =RGBA(54, 176, 75, 1)
         Height: =93
-        OnSelect: =SubmitForm(Form2);Navigate(BrowseScreen1)
+        OnSelect: =SubmitForm(Form2);Navigate(Login)
         RadiusBottomLeft: =1031
         RadiusBottomRight: =1031
         RadiusTopLeft: =1031
@@ -281,7 +412,7 @@ SignUpOrg As screen:
         Size: =24
         Text: ="Sign Up"
         Width: =316
-        X: =180
-        Y: =876
+        X: =162
+        Y: =992
         ZIndex: =4
 

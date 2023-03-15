@@ -780,19 +780,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Title_DataCard4.DataCardValue28.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpOrg.Form2.Password_DataCard1.confirm_Password.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Title_DataCard4.DataCardValue28.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpOrg.Form2.Password_DataCard1.confirm_Password.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SignUpOrg",
-                "type": "SignUpOrg.Form2.Title_DataCard4.DataCardValue28"
+                "type": "SignUpOrg.Form2.Password_DataCard1.confirm_Password"
               }
             }
           ],
@@ -810,19 +810,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Organization_Name_DataCard1.DataCardValue29.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpOrg.Form2.Email_DataCard1.DataCardValue25.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Organization_Name_DataCard1.DataCardValue29.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpOrg.Form2.Email_DataCard1.DataCardValue25.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SignUpOrg",
-                "type": "SignUpOrg.Form2.Organization_Name_DataCard1.DataCardValue29"
+                "type": "SignUpOrg.Form2.Email_DataCard1.DataCardValue25"
               }
             }
           ],
@@ -840,19 +840,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Org_Password_DataCard1.DataCardValue30.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpOrg.Form2.CustomerID_DataCard3.DataCardValue23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpOrg.Form2.Org_Password_DataCard1.DataCardValue30.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpOrg.Form2.CustomerID_DataCard3.DataCardValue23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SignUpOrg",
-                "type": "SignUpOrg.Form2.Org_Password_DataCard1.DataCardValue30"
+                "type": "SignUpOrg.Form2.CustomerID_DataCard3.DataCardValue23"
               }
             }
           ],
@@ -870,19 +870,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpOrg.Form2.'Confirm Password'.TextInput10.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpOrg.Form2.Title_DataCard3.DataCardValue22.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpOrg.Form2.'Confirm Password'.TextInput10.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpOrg.Form2.Title_DataCard3.DataCardValue22.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SignUpOrg",
-                "type": "SignUpOrg.Form2.'Confirm Password'.TextInput10"
+                "type": "SignUpOrg.Form2.Title_DataCard3.DataCardValue22"
               }
             }
           ],
@@ -1134,6 +1134,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpOrg.Form2.Password_DataCard1.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpOrg.Form2.Password_DataCard1.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignUpOrg",
+                "type": "SignUpOrg.Form2.Password_DataCard1.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpOrg.Form2.UserType_DataCard2.DataCardValue29.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpOrg.Form2.UserType_DataCard2.DataCardValue29.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignUpOrg",
+                "type": "SignUpOrg.Form2.UserType_DataCard2.DataCardValue29"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
         },
         {
           "locations": [
