@@ -407,7 +407,6 @@ SignUpOrg As screen:
         Height: =93
         OnSelect: |-
             =SubmitForm(Form2);
-             NewForm(Form1);
             Navigate(Login)
         RadiusBottomLeft: =1031
         RadiusBottomRight: =1031
