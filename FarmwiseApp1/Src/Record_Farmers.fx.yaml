@@ -14,7 +14,7 @@ Record_Farmers As screen:
         ZIndex: =1
 
     Form1 As form:
-        DataSource: =Farmer_Records_1
+        DataSource: =Farmer_Records
         Height: =706
         Width: =640
         Y: =310
@@ -25,10 +25,10 @@ Record_Farmers As screen:
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Farmer_Records_1],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@Farmer_Records],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Farmer_Records_1], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@Farmer_Records], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue24.Text
             Width: =640
@@ -38,10 +38,9 @@ Record_Farmers As screen:
 
             DataCardKey25 As label:
                 AutoHeight: =true
-                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
-                Text: ="Product"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -54,7 +53,6 @@ Record_Farmers As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                HintText: ="Product name"
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -100,7 +98,7 @@ Record_Farmers As screen:
             DataField: ="Dateandtime"
             Default: =ThisItem.'Date and time'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Farmer_Records_1],DataSourceInfo.DisplayName,"Dateandtime")
+            DisplayName: =DataSourceInfo([@Farmer_Records],DataSourceInfo.DisplayName,"Dateandtime")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -112,7 +110,6 @@ Record_Farmers As screen:
 
             DataCardKey28 As label:
                 AutoHeight: =true
-                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -222,7 +219,7 @@ Record_Farmers As screen:
             DataField: ="Quantityofproduct"
             Default: =ThisItem.'Quantity of product'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Farmer_Records_1],DataSourceInfo.DisplayName,"Quantityofproduct")
+            DisplayName: =DataSourceInfo([@Farmer_Records],DataSourceInfo.DisplayName,"Quantityofproduct")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -234,7 +231,6 @@ Record_Farmers As screen:
 
             DataCardKey29 As label:
                 AutoHeight: =true
-                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -262,6 +258,22 @@ Record_Farmers As screen:
                 X: =30
                 Y: =DataCardKey29.Y + DataCardKey29.Height + 5
                 ZIndex: =2
+
+            ErrorMessage22 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue26.Y + DataCardValue26.Height
+                ZIndex: =3
 
             StarVisible22 As label:
                 Align: =Align.Center
