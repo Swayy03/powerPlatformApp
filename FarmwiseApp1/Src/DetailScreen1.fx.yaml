@@ -623,6 +623,7 @@
 
     Button2 As button:
         Height: =76
+        OnSelect: =Navigate(Record_Farmers)
         Size: =24
         Text: ="New Record"
         Width: =418

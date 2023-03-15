@@ -1,4 +1,4 @@
-Screen1 As screen:
+Record_Farmers As screen:
     Fill: =RGBA(0, 18, 107, 1)
 
     Label3 As label:
