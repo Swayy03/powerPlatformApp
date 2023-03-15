@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr2de_people",
+    "MaxGetRowsCount": 500,
     "Name": "People",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -38,6 +39,20 @@
     },
     "PreferredName": "People",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "People (Views)",
+    "Name": "_cr2de_people_views",
+    "RelatedEntityName": "People",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1eb928ce-b298-4f63-ac2a-dd8269bcc723": "Active People",
+      "60a2d255-0f18-4532-8e00-2732bcd5d89a": "People Advanced Find View",
+      "ab761c43-3685-4f94-9605-4a3f6e7ee48a": "People Associated View",
+      "ea4105cc-6d90-4ddc-998d-cd511c124128": "Inactive People",
+      "f475dc61-9302-40aa-b0fb-12c8f447d100": "People Lookup View"
+    }
   },
   {
     "DisplayName": "Status (People)",

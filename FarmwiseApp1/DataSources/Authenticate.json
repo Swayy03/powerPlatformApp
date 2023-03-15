@@ -35,7 +35,9 @@
       "Modified": "Modified",
       "Password": "Password",
       "Title": "Title",
-      "Username": "Username"
+      "Username": "Username",
+      "UserType": "UserType",
+      "UserType#Id": "UserType Id"
     },
     "DatasetName": "https://3tlkd0.sharepoint.com/sites/FARMWISEMAIN",
     "EncodeDataset": true,

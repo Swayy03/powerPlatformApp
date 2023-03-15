@@ -3,7 +3,9 @@
     {
       "Kind": "default.cds_cr2de_people_forms",
       "Namespace": "People (Forms)",
-      "Values": {}
+      "Values": {
+        "Information": "59996454-ce41-4f92-b29e-dc83cb771b1d"
+      }
     }
   ]
 }
