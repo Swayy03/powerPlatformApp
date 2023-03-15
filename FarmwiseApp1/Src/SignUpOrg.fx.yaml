@@ -408,7 +408,7 @@ SignUpOrg As screen:
         OnSelect: |-
             =SubmitForm(Form2);
              NewForm(Form1);
-            Navigate(Login);
+            Navigate(Login)
         RadiusBottomLeft: =1031
         RadiusBottomRight: =1031
         RadiusTopLeft: =1031
