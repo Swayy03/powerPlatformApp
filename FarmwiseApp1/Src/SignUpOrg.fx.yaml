@@ -341,6 +341,26 @@ SignUpOrg As screen:
                 Y: =10
                 ZIndex: =1
 
+            confirm_Password As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                HintText: ="Confirm Password"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =31
+                RadiusBottomRight: =31
+                RadiusTopLeft: =31
+                RadiusTopRight: =31
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =580
+                X: =29
+                Y: =155
+                ZIndex: =2
+
             ErrorMessage20 As label:
                 AutoHeight: =true
                 Height: =10
