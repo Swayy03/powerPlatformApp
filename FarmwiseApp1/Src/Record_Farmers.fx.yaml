@@ -38,6 +38,7 @@ Record_Farmers As screen:
 
             DataCardKey25 As label:
                 AutoHeight: =true
+                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -110,6 +111,7 @@ Record_Farmers As screen:
 
             DataCardKey28 As label:
                 AutoHeight: =true
+                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -231,6 +233,7 @@ Record_Farmers As screen:
 
             DataCardKey29 As label:
                 AutoHeight: =true
+                Color: =RGBA(141, 198, 63, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
