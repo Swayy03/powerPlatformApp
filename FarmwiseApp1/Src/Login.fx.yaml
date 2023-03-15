@@ -137,7 +137,9 @@ Login As screen:
         HoverBorderColor: =
         HoverColor: =RGBA(255, 255, 0, 1)
         HoverFill: =ColorFade(RGBA(0, 255, 0, 1), -20%)
-        OnSelect: =Navigate(SignUpOrg)
+        OnSelect: |-
+            =NewForm(Form2);
+            Navigate(SignUpOrg)
         PressedColor: =RGBA(0, 0, 0, 0)
         Size: =24
         Text: ="No account?Sign Up"

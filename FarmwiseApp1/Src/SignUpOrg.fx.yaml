@@ -53,10 +53,10 @@ SignUpOrg As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =63
                 InputTextPlaceholder: ="Join Us as"
-                Items: =Filter(Choices([@Authenticate].UserType), Value = DataCardValue6.Selected.Value)
+                Items: =Choices([@Authenticate].UserType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Search(Filter(Choices([@Authenticate].UserType), Value = DataCardValue6.Selected.Value),DataCardValue29.SearchText,"Value")
+                SearchItems: =Choices(Authenticate.UserType,DataCardValue29.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Double
