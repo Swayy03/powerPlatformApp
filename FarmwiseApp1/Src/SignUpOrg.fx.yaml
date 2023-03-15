@@ -405,7 +405,10 @@ SignUpOrg As screen:
     Button5 As button:
         Fill: =RGBA(54, 176, 75, 1)
         Height: =93
-        OnSelect: =SubmitForm(Form2);Navigate(Login)
+        OnSelect: |-
+            =SubmitForm(Form2);
+             NewForm(Form1);
+            Navigate(Login);
         RadiusBottomLeft: =1031
         RadiusBottomRight: =1031
         RadiusTopLeft: =1031
