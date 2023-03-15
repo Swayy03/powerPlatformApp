@@ -81,8 +81,8 @@ Login As screen:
         HoverBorderColor: =ColorFade(Self.BorderColor,
         HoverColor: =RGBA(141, 198, 63, 1)
         HoverFill: =ColorFade(RGBA(0,255,10,10), -20%)
-        OnSelect: |-
-            =If(!IsBlank( LookUp(Authenticate,Email=loginEmail.Text And Password=input3.Text).Title),Navigate(BrowseScreen1),UpdateContext({ShowForgetMessage:true}))
+        OnSelect: |
+            =If(!IsBlank( LookUp(Authenticate,Email=loginEmail.Text And Password=input3.Text).Title),Navigate(BrowseScreen1),UpdateContext({ShowForgetMessage:true}));
         RadiusBottomLeft: =31
         RadiusBottomRight: =31
         RadiusTopLeft: =31
