@@ -119,7 +119,6 @@ Record_Farmers As screen:
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DateValue1 As datepicker:
@@ -290,4 +289,19 @@ Record_Farmers As screen:
                 Wrap: =false
                 Y: =DataCardKey29.Y
                 ZIndex: =4
+
+    Button7 As button:
+        Fill: =RGBA(141, 198, 63, 1)
+        Height: =70
+        OnSelect: =SubmitForm(Form1);Navigate(DetailScreen1)
+        RadiusBottomLeft: =31
+        RadiusBottomRight: =31
+        RadiusTopLeft: =31
+        RadiusTopRight: =31
+        Size: =24
+        Text: ="Submit"
+        Width: =280
+        X: =190
+        Y: =876
+        ZIndex: =3
 
