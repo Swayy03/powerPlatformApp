@@ -121,6 +121,7 @@
     "BrowseScreen1",
     "DetailScreen1",
     "EditScreen1",
-    "SignUpOrg"
+    "SignUpOrg",
+    "Screen1"
   ]
 }

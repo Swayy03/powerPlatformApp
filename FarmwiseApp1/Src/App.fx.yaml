@@ -2,6 +2,6 @@ App As appinfo:
     BackEnabled: =false
     ConfirmExit: =true
     MinScreenHeight: |
-        =800
+        =900
     OnStart: =Navigate(Login)
 

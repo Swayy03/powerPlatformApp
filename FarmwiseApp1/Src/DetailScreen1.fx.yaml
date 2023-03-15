@@ -538,8 +538,8 @@
                 Size: =21
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                X: =60
+                Y: =50
                 ZIndex: =2
 
         Organization_DataCard1 As typedDataCard.comboBoxMultiSelectViewCard:
@@ -610,4 +610,23 @@
                 Wrap: =false
                 Y: =DataCardKey19.Y
                 ZIndex: =4
+
+        New_Record As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =225
+            Width: =640
+            X: =0
+            Y: =11
+            ZIndex: =1
+
+    Button2 As button:
+        Height: =76
+        Size: =24
+        Text: ="New Record"
+        Width: =418
+        X: =134
+        Y: =974
+        ZIndex: =7
 
