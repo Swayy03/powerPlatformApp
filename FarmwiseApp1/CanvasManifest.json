@@ -118,7 +118,6 @@
   },
   "ScreenOrder": [
     "Login",
-    "Register",
     "BrowseScreen1",
     "DetailScreen1",
     "EditScreen1",
