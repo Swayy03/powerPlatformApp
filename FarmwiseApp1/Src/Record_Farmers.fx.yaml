@@ -305,3 +305,18 @@ Record_Farmers As screen:
         Y: =876
         ZIndex: =3
 
+    Button6 As button:
+        Height: =83
+        Size: =24
+        Text: =""
+        Width: =106
+        ZIndex: =4
+
+    Icon3 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =83
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(DetailScreen1)
+        Width: =106
+        ZIndex: =5
+
