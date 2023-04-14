@@ -1,14 +1,19 @@
 "BrowseScreen1 As screen.'phoneBrowseLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
+        Fill: =RGBA(0, 18, 107, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
     LblAppName1 As label:
+        Color: =RGBA(54, 176, 75, 1)
         Fill: =RGBA(58, 58, 58, 0)
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Bold
         Height: =88
-        Size: =27
+        Italic: =true
+        Size: =40
         Text: ="Farmers"
         Width: =Parent.Width - Self.X - IconSortUpDown1.Width - IconNewItem1.Width - IconRefresh1.Width
         Wrap: =false
@@ -100,6 +105,7 @@
         ZIndex: =8
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver4.0'":
+        Fill: =RGBA(0, 18, 107, 1)
         Height: =Parent.Height - Self.Y
         Items: =SortByColumns(Filter([@Farmers], StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
@@ -115,12 +121,17 @@
             Height: =128
             Image: =ThisItem.Profile_Photo
             OnSelect: =Select(Parent)
+            RadiusBottomLeft: =60
+            RadiusBottomRight: =60
+            RadiusTopLeft: =60
+            RadiusTopRight: =60
             Width: =128
             X: =16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
         Title1 As label:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =49
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -135,6 +146,7 @@
             ZIndex: =2
 
         Subtitle1 As label:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =32
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -149,6 +161,7 @@
             ZIndex: =3
 
         Body1 As label:
+            Color: =RGBA(255, 255, 255, 1)
             Font: =Font.'Lato Black'
             Height: =94
             OnSelect: =Select(Parent)
@@ -181,9 +194,26 @@
             ZIndex: =5
 
         Separator1 As rectangle:
-            Height: =1
+            Fill: =RGBA(54, 176, 75, 1)
+            Height: =2
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =6
+
+        Icon5 As icon.ChevronRight:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =54
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            Width: =30
+            X: =586
+            Y: =60
+            ZIndex: =7
+
+    Rectangle1 As rectangle:
+        Height: =70
+        Width: =640
+        Y: =1066
+        ZIndex: =10
 
