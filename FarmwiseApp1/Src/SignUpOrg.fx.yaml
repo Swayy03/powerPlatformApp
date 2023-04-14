@@ -419,3 +419,20 @@ SignUpOrg As screen:
         Y: =992
         ZIndex: =4
 
+    Button8 As button:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =76
+        OnSelect: =Navigate(Login)
+        Size: =24
+        Text: =""
+        Width: =176
+        Y: =10
+        ZIndex: =5
+
+    Icon4 As icon.BackArrow:
+        Fill: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        X: =12
+        Y: =10
+        ZIndex: =6
+

@@ -1,8 +1,5 @@
 {
   "2fb26bb1-d3de-4770-98f7-4abb8242eba5": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
@@ -33,9 +30,6 @@
     "id": "2fb26bb1-d3de-4770-98f7-4abb8242eba5"
   },
   "c1166111-c1d1-40ed-bccc-825b94c9420a": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
@@ -78,9 +72,6 @@
     "id": "c1166111-c1d1-40ed-bccc-825b94c9420a"
   },
   "f53f371e-6238-45ed-bc6c-be4e1b36e445": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
